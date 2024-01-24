@@ -81,7 +81,8 @@ class Login extends Component {
                             <div className='custom-input-password'>
                                 <input type={this.state.isShowPassword ? 'text' : 'password'}
                                     className='form-control' placeholder='Enter your password'
-                                    onChange={(event) => this.handleOnChangePassword(event)} />
+                                    onChange={(event) => this.handleOnChangePassword(event)}
+                                />
                                 <span onClick={() => this.handleShowHidePassword()}>
                                     <i class={this.state.isShowPassword ? "fas fa-eye-slash" : "far fa-eye"}></i>
                                 </span>

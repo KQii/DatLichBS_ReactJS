@@ -1,0 +1,73 @@
+.btn-edit {
+    width     : 50px;
+    border    : none;
+    outline   : none;
+    background: transparent;
+    color     : orange;
+
+    &:hover {
+        background-color: transparent !important;
+        color           : orange !important;
+    }
+}
+
+.btn-delete {
+    width     : 50px;
+    border    : none;
+    outline   : none;
+    background: transparent;
+    color     : rgb(235, 15, 15);
+
+    &:hover {
+        background-color: transparent !important;
+        color           : rgb(235, 15, 15) !important;
+    }
+}
+
+.modal-user-container {
+
+    .modal-header {
+        button {
+            background-color: transparent !important;
+            border          : none;
+            color           : white;
+            font-size       : 20px;
+        }
+    }
+
+    .modal-user-body {
+        display  : flex;
+        grid-gap : 10px;
+        gap      : 10px;
+        flex-wrap: wrap;
+
+        input, select {
+            border-radius: 3px;
+            border       : 1px solid gray;
+            height       : 30px;
+            outline      : none;
+            padding      : 0 10px;
+        }
+
+        .input-container {
+            display       : flex;
+            flex-direction: column;
+            width         : 49%;
+
+            &.max-width-input {
+                width: 100%;
+            }
+        }
+
+        .second-container {
+            display: flex;
+            width: 100%;
+
+            .second-input-container {
+                display       : flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+}
